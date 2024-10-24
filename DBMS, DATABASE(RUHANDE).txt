@@ -1,0 +1,427 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 14
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> most neede
+    -> Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+    ->
+    -> mysql> create database RUHANDE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'most neede
+Type 'help;' or '\h' for help. Type '\c' to clear the current input s' at line 1
+mysql> Query OK, 1 row affected (0.01 sec)
+    ->
+    -> mysql> use RUHANDE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected (0.01 sec)
+
+mysql> use RUHANDE' at line 1
+mysql> Database changed
+    -> mysql> create table NGOMA(ID INT(18),FNAME CHAR(10),LNAME CHAR(10),PROVINCE CHAR(10),DISTRICT CHAR(10),SECTOR CHAR(15),CELL CHAR(15),TELEPHONE INT(12),EMAIL CHAR(15));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Database changed
+mysql> create table NGOMA(ID INT(18),FNAME CHAR(10),LNAME CHAR(' at line 1
+mysql> Query OK, 0 rows affected, 2 warnings (0.03 sec)
+    ->
+    -> mysql> INSERT INTO NGOMA VALUES('00223376','NEZA','san','EAST','KAYONZA','MUGINA','0786776655','nezasan@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 0 rows affected, 2 warnings (0.03 sec)
+
+mysql> INSERT INTO NGOMA VALUE' at line 1
+mysql> ERROR 1136 (21S01): Column count doesn't match value count at row 1
+    '> mysql> INSERT INTO NGOMA VALUES('119922337623','NEZA','san','EAST','KAYONZA','MUGINA','kayari','0786776655','nezasan@gmail.com');
+    '> Query OK, 1 row affected, 2 warnings (0.00 sec)
+    '>
+    '> mysql> select *from NGOMA;
+    '> +------------+-------+-------+----------+----------+--------+--------+-----------+-----------------+
+    '> | ID         | FNAME | LNAME | PROVINCE | DISTRICT | SECTOR | CELL   | TELEPHONE | EMAIL           |
+    '> +------------+-------+-------+----------+----------+--------+--------+-----------+-----------------+
+    '> | 2147483647 | NEZA  | san   | EAST     | KAYONZA  | MUGINA | kayari | 786776655 | nezasan@gmail.c |
+    '> +------------+-------+-------+----------+----------+--------+--------+-----------+-----------------+
+    '> 1 row in set (0.00 sec)
+    '>
+    '> mysql> INSERT INTO NGOMA VALUES('119946654527','IRAKOZE','nella','WEST','GISENENYI','KARAMBO','gacari','0791273776','irakozenella@gmail.com');
+    '> Query OK, 1 row affected, 2 warnings (0.00 sec)
+    '>
+    '> mysql> select *from NGOMA;
+    '> +------------+---------+-------+----------+-----------+---------+--------+-----------+-----------------+
+    '> | ID         | FNAME   | LNAME | PROVINCE | DISTRICT  | SECTOR  | CELL   | TELEPHONE | EMAIL           |
+    '> +------------+---------+-------+----------+-----------+---------+--------+-----------+-----------------+
+    '> | 2147483647 | NEZA    | san   | EAST     | KAYONZA   | MUGINA  | kayari | 786776655 | nezasan@gmail.c |
+    '> | 2147483647 | IRAKOZE | nella | WEST     | GISENENYI | KARAMBO | gacari | 791273776 | irakozenella@gm |
+    '> +------------+---------+-------+----------+-----------+---------+--------+-----------+-----------------+
+    '> 2 rows in set (0.00 sec)
+    '>
+    '> mysql> INSERT INTO NGOMA VALUES('119425424665','KAYONGA','dav','NORTH','RULINDO','MUGANZA','kanani','0786635556','kayongadav@gmail.com');
+    '> Query OK, 1 row affected, 2 warnings (0.02 sec)
+    '>
+    '> mysql> select *from NGOMA;
+    '> +------------+---------+-------+----------+-----------+---------+--------+-----------+-----------------+
+    '> | ID         | FNAME   | LNAME | PROVINCE | DISTRICT  | SECTOR  | CELL   | TELEPHONE | EMAIL           |
+    '> +------------+---------+-------+----------+-----------+---------+--------+-----------+-----------------+
+    '> | 2147483647 | NEZA    | san   | EAST     | KAYONZA   | MUGINA  | kayari | 786776655 | nezasan@gmail.c |
+    '> | 2147483647 | IRAKOZE | nella | WEST     | GISENENYI | KARAMBO | gacari | 791273776 | irakozenella@gm |
+    '> | 2147483647 | KAYONGA | dav   | NORTH    | RULINDO   | MUGANZA | kanani | 786635556 | kayongadav@gmai |
+    '> +------------+---------+-------+----------+-----------+---------+--------+-----------+-----------------+
+    '> 3 rows in set (0.00 sec)
+    '>
+    '> mysql> INSERT INTO VALUES('197662677772','MUSONI','gesi','KIGALI','GASABO','KAGUGU','ntobo','0787687676','musges@gmail.com');
+    '> ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES('197662677772','MUSONI','gesi','KIGALI','GASABO','KAGUGU','ntobo','078768' at line 1
+    -> mysql> INSERT INTO VALUES('197662677772','MUSONI','gesi','KIGALI','GASABO','KAGUGU','ntobo','0787687676','musonigesi@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> INSER' at line 1
+mysql> ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES('197662677772','MUSONI','gesi','KIGALI','GASABO','KAGUGU','ntobo','078768' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ERROR 1064 (42000): You have an error in your SQL syntax' at line 1
+    '> mysql> INSERT INTO NGOMA VALUES('197662677772','MUSONI','gesi','KIGALI','GASABO','KAGUGU','ntobo','0787687676','musonigesi@gmail.com');
+    '> Query OK, 1 row affected, 2 warnings (0.00 sec)
+    '>
+    '> mysql> INSERT INTO NGOMA VALUES('199362556676','MINANI','GAD','SOUTH','NYANZA,'MAYATI','ndama','0725355345','gad@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'the manual that corresponds to your MySQL server version for the right syntax to' at line 1
+mysql>     '> INSERT INTO NGOMA VALUES('199362556676','MINANI','GAD','SOUTH','NYANZA,'MAYATI','ndama','0725355345','gad@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''> INSERT INTO NGOMA VALUES('199362556676','MINANI','GAD','SOUTH','NYANZA,'MAYAT' at line 1
+mysql> ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAYATI','ndama','0725355345','gad@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ERROR 1064 (42000): You have an error in your SQL syntax' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'the manual that corresponds to your MySQL server version for the right syntax to' at line 1
+mysql> INSERT INTO NGOMA VALUES('1993625' at line 1
+    -> mysql> INSERT INTO NGOMA VALUES('199362556676','MINANI','GAD','SOUTH','NYANZA,'MAYATI','ndama','0725355345','gad@gmail.com');
+    '>     '>
+    ->     '> INSERT INTO NGOMA VALUES('199362556676','MINANI','GAD','SOUTH','NYANZA,'MAYATI','ndama','0725355345','gad@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at line 1
+mysql> INSERT INTO NGOMA VALUES('199362556676','MINANI','GAD','SOUTH',' at line 1
+mysql> ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAYATI','ndama','0725355345','gad@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ERROR 1064 (42000): You have an error in your SQL syntax' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'the manual that corresponds to your MySQL server version for the right syntax to' at line 1
+mysql>
+mysql> INSERT INTO NGOMA VALUES('199362' at line 1
+    -> mysql> INSERT INTO NGOMA VALUES('1966555676655','KAMALI', 'NOLLY','SOUTH','RUHANGO','MAYAGA','mukiki','0723568779','nolly@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at line 1
+mysql> INSERT INTO NGOMA VALUES('1966555676655','KAMALI', 'NOLLY','SOU' at line 1
+mysql> Query OK, 1 row affected, 1 warning (0.00 sec)
+    ->
+    -> mysql> INSERT INTO NGOMA VALUES('1987636455667','RUKUNDO','ALLY','KIGALI','GASABO','REMERA','kibagabaga','0789484334','ally@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES(' at line 1
+mysql> Query OK, 1 row affected, 1 warning (0.00 sec)
+    ->
+    -> mysql> insert into NGOMA values('198767766656','GASALI','TAGH','KIGALI','KICUKIRO','GIKONDO','kamukina','0787377888','tagh@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into NGOMA values(' at line 1
+mysql> Query OK, 1 row affected, 1 warning (0.00 sec)
+    ->
+    -> mysql> insrt into NGOMA VALUES('1277366777','KEZA','MELISA','WEST','BURERA','KALULIBA','ruli','0782347778','melisa@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insrt into NGOMA VALUES('' at line 1
+mysql> ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insrt into NGOMA VALUES('1277366777','KEZA','MELISA','WEST','BURERA','KALULIBA',' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ERROR 1064 (42000): You have an error in your SQL syntax' at line 1
+    -> mysql> insert into NGOMA VALUES('1277366777','KEZA','MELISA','WEST','BURERA','KALULIBA','ruli','0782347778','melisa@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'the manual that corresponds to your MySQL server version for the right syntax to' at line 1
+mysql> Query OK, 1 row affected, 1 warning (0.00 sec)
+    ->
+    -> mysql> select *from NGOMA;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select *from NGOMA' at line 1
+mysql> +------------+---------+--------+----------+-----------+----------+------------+-----------+-----------------+
+    -> | ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR   | CELL       | TELEPHONE | EMAIL           |
+    -> +------------+---------+--------+----------+-----------+----------+------------+-----------+-----------------+
+    -> | 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA   | kayari     | 786776655 | nezasan@gmail.c |
+    -> | 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO  | gacari     | 791273776 | irakozenella@gm |
+    -> | 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA  | kanani     | 786635556 | kayongadav@gmai |
+    -> | 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU   | ntobo      | 787687676 | musonigesi@gmai |
+    -> | 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA   | mukiki     | 723568779 | nolly@gmail.com |
+    -> | 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA   | kibagabaga | 789484334 | ally@gmail.com  |
+    -> | 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO  | kamukina   | 787377888 | tagh@gmail.com  |
+    -> | 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA | ruli       | 782347778 | melisa@gmail.co |
+    -> +------------+---------+--------+----------+-----------+----------+------------+-----------+-----------------+
+    -> 8 rows in set (0.00 sec)
+    ->
+    -> mysql> INSERT INTO NGOMA VALUES('1998366666667','MUNEZA','DANY','SOUTH','MUHANGA','NYAMABUYE','jali','078277789','dany@gmai.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+------------+---------+--------+----------+-----------+----------+------------+' at line 1
+mysql> Query OK, 1 row affected, 1 warning (0.00 sec)
+    ->
+    -> mysql> INSERT INTO NGOMA VALUES('1773664553666','GISA','ELVIS','KIGALI','GASABO','KIMIRONKO','muliji','078373738','elvis@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES(' at line 1
+mysql> Query OK, 1 row affected, 1 warning (0.00 sec)
+    ->
+    -> mysql> select *from NGOMA;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select *from NGOMA' at line 1
+mysql> +------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+
+    -> | ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | CELL       | TELEPHONE | EMAIL           |
+    -> +------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+
+    -> | 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | kayari     | 786776655 | nezasan@gmail.c |
+    -> | 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | gacari     | 791273776 | irakozenella@gm |
+    -> | 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | kanani     | 786635556 | kayongadav@gmai |
+    -> | 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | ntobo      | 787687676 | musonigesi@gmai |
+    -> | 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | mukiki     | 723568779 | nolly@gmail.com |
+    -> | 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | kibagabaga | 789484334 | ally@gmail.com  |
+    -> | 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | kamukina   | 787377888 | tagh@gmail.com  |
+    -> | 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | ruli       | 782347778 | melisa@gmail.co |
+    -> | 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE | jali       |  78277789 | dany@gmai.com   |
+    -> | 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO | muliji     |  78373738 | elvis@gmail.com |
+    -> +------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+
+    -> 10 rows in set (0.00 sec)
+    ->
+    -> mysql> ALTER TABLE NGOMA ADD GENDER CHAR(12);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+------------+---------+--------+----------+-----------+-----------+------------' at line 1
+mysql> Query OK, 10 rows affected (0.06 sec)
+    -> Records: 10  Duplicates: 0  Warnings: 0
+    ->
+    -> mysql> SELECT *FROM NGOMA;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+m' at line 1
+mysql> +------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+    -> | ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | CELL       | TELEPHONE | EMAIL           | GENDER |
+    -> +------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+    -> | 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | kayari     | 786776655 | nezasan@gmail.c | NULL   |
+    -> | 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | gacari     | 791273776 | irakozenella@gm | NULL   |
+    -> | 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | kanani     | 786635556 | kayongadav@gmai | NULL   |
+    -> | 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | ntobo      | 787687676 | musonigesi@gmai | NULL   |
+    -> | 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | mukiki     | 723568779 | nolly@gmail.com | NULL   |
+    -> | 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | kibagabaga | 789484334 | ally@gmail.com  | NULL   |
+    -> | 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | kamukina   | 787377888 | tagh@gmail.com  | NULL   |
+    -> | 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | ruli       | 782347778 | melisa@gmail.co | NULL   |
+    -> | 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE | jali       |  78277789 | dany@gmai.com   | NULL   |
+    -> | 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO | muliji     |  78373738 | elvis@gmail.com | NULL   |
+    -> +------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+    -> 10 rows in set (0.00 sec)
+    ->
+    -> mysql>
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    -> mysql>update table NGOMA SET GENDER ='M' WHERE ID=2147483647;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+------------+---------+--------+----------+-----------+-----------+------------' at line 1
+mysql> mysql>update table NGOMA SET GENDER ='M' WHERE ID='2147483647';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql>update table NGOMA SET GENDER ='M' WHERE ID='2147483647'' at line 1
+mysql> update table NGOMA SET GENDER ='M' WHERE ID='2147483647';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table NGOMA SET GENDER ='M' WHERE ID='2147483647'' at line 1
+mysql> update table NGOMA SET GENDER ='M' WHERE ID='21474836474';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table NGOMA SET GENDER ='M' WHERE ID='21474836474'' at line 1
+mysql> update table NGOMA SET GENDER ='M' WHERE ID='2147483647';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table NGOMA SET GENDER ='M' WHERE ID='2147483647'' at line 1
+mysql> update  NGOMA SET GENDER ='M' WHERE ID='2147483647';
+ERROR 1046 (3D000): No database selected
+mysql> USE RUHANDE;
+Database changed
+mysql> update  NGOMA SET GENDER ='M' WHERE ID='2147483647';
+Query OK, 9 rows affected (0.02 sec)
+Rows matched: 9  Changed: 9  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | CELL       | TELEPHONE | EMAIL           | GENDER |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | kayari     | 786776655 | nezasan@gmail.c | M      |
+| 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | gacari     | 791273776 | irakozenella@gm | M      |
+| 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | kanani     | 786635556 | kayongadav@gmai | M      |
+| 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | ntobo      | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | mukiki     | 723568779 | nolly@gmail.com | M      |
+| 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | kibagabaga | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | kamukina   | 787377888 | tagh@gmail.com  | M      |
+| 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | ruli       | 782347778 | melisa@gmail.co | NULL   |
+| 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE | jali       |  78277789 | dany@gmai.com   | M      |
+| 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO | muliji     |  78373738 | elvis@gmail.com | M      |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> update  NGOMA SET GENDER ='M' WHERE PROVINCE='EAST';
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | CELL       | TELEPHONE | EMAIL           | GENDER |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | kayari     | 786776655 | nezasan@gmail.c | M      |
+| 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | gacari     | 791273776 | irakozenella@gm | M      |
+| 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | kanani     | 786635556 | kayongadav@gmai | M      |
+| 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | ntobo      | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | mukiki     | 723568779 | nolly@gmail.com | M      |
+| 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | kibagabaga | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | kamukina   | 787377888 | tagh@gmail.com  | M      |
+| 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | ruli       | 782347778 | melisa@gmail.co | NULL   |
+| 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE | jali       |  78277789 | dany@gmai.com   | M      |
+| 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO | muliji     |  78373738 | elvis@gmail.com | M      |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> update  NGOMA SET GENDER ='F' WHERE PROVINCE='EAST';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | CELL       | TELEPHONE | EMAIL           | GENDER |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | kayari     | 786776655 | nezasan@gmail.c | F      |
+| 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | gacari     | 791273776 | irakozenella@gm | M      |
+| 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | kanani     | 786635556 | kayongadav@gmai | M      |
+| 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | ntobo      | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | mukiki     | 723568779 | nolly@gmail.com | M      |
+| 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | kibagabaga | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | kamukina   | 787377888 | tagh@gmail.com  | M      |
+| 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | ruli       | 782347778 | melisa@gmail.co | NULL   |
+| 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE | jali       |  78277789 | dany@gmai.com   | M      |
+| 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO | muliji     |  78373738 | elvis@gmail.com | M      |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> update  NGOMA SET GENDER ='F' WHERE PROVINCE='WEST';
+Query OK, 2 rows affected (0.00 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | CELL       | TELEPHONE | EMAIL           | GENDER |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+| 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | kayari     | 786776655 | nezasan@gmail.c | F      |
+| 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | gacari     | 791273776 | irakozenella@gm | F      |
+| 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | kanani     | 786635556 | kayongadav@gmai | M      |
+| 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | ntobo      | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | mukiki     | 723568779 | nolly@gmail.com | M      |
+| 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | kibagabaga | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | kamukina   | 787377888 | tagh@gmail.com  | M      |
+| 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | ruli       | 782347778 | melisa@gmail.co | F      |
+| 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE | jali       |  78277789 | dany@gmai.com   | M      |
+| 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO | muliji     |  78373738 | elvis@gmail.com | M      |
++------------+---------+--------+----------+-----------+-----------+------------+-----------+-----------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA DROP CELL;
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+---------+--------+----------+-----------+-----------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME  | PROVINCE | DISTRICT  | SECTOR    | TELEPHONE | EMAIL           | GENDER |
++------------+---------+--------+----------+-----------+-----------+-----------+-----------------+--------+
+| 2147483647 | NEZA    | san    | EAST     | KAYONZA   | MUGINA    | 786776655 | nezasan@gmail.c | F      |
+| 2147483647 | IRAKOZE | nella  | WEST     | GISENENYI | KARAMBO   | 791273776 | irakozenella@gm | F      |
+| 2147483647 | KAYONGA | dav    | NORTH    | RULINDO   | MUGANZA   | 786635556 | kayongadav@gmai | M      |
+| 2147483647 | MUSONI  | gesi   | KIGALI   | GASABO    | KAGUGU    | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | KAMALI  | NOLLY  | SOUTH    | RUHANGO   | MAYAGA    | 723568779 | nolly@gmail.com | M      |
+| 2147483647 | RUKUNDO | ALLY   | KIGALI   | GASABO    | REMERA    | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GASALI  | TAGH   | KIGALI   | KICUKIRO  | GIKONDO   | 787377888 | tagh@gmail.com  | M      |
+| 1277366777 | KEZA    | MELISA | WEST     | BURERA    | KALULIBA  | 782347778 | melisa@gmail.co | F      |
+| 2147483647 | MUNEZA  | DANY   | SOUTH    | MUHANGA   | NYAMABUYE |  78277789 | dany@gmai.com   | M      |
+| 2147483647 | GISA    | ELVIS  | KIGALI   | GASABO    | KIMIRONKO |  78373738 | elvis@gmail.com | M      |
++------------+---------+--------+----------+-----------+-----------+-----------+-----------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT FNAME,LNAME,GENDER FROM NGOMA;
++---------+--------+--------+
+| FNAME   | LNAME  | GENDER |
++---------+--------+--------+
+| NEZA    | san    | F      |
+| IRAKOZE | nella  | F      |
+| KAYONGA | dav    | M      |
+| MUSONI  | gesi   | M      |
+| KAMALI  | NOLLY  | M      |
+| RUKUNDO | ALLY   | M      |
+| GASALI  | TAGH   | M      |
+| KEZA    | MELISA | F      |
+| MUNEZA  | DANY   | M      |
+| GISA    | ELVIS  | M      |
++---------+--------+--------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE PROVINCE='KIGALI' OR GENDER='M';
++------------+---------+-------+----------+----------+-----------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME | PROVINCE | DISTRICT | SECTOR    | TELEPHONE | EMAIL           | GENDER |
++------------+---------+-------+----------+----------+-----------+-----------+-----------------+--------+
+| 2147483647 | KAYONGA | dav   | NORTH    | RULINDO  | MUGANZA   | 786635556 | kayongadav@gmai | M      |
+| 2147483647 | MUSONI  | gesi  | KIGALI   | GASABO   | KAGUGU    | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | KAMALI  | NOLLY | SOUTH    | RUHANGO  | MAYAGA    | 723568779 | nolly@gmail.com | M      |
+| 2147483647 | RUKUNDO | ALLY  | KIGALI   | GASABO   | REMERA    | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GASALI  | TAGH  | KIGALI   | KICUKIRO | GIKONDO   | 787377888 | tagh@gmail.com  | M      |
+| 2147483647 | MUNEZA  | DANY  | SOUTH    | MUHANGA  | NYAMABUYE |  78277789 | dany@gmai.com   | M      |
+| 2147483647 | GISA    | ELVIS | KIGALI   | GASABO   | KIMIRONKO |  78373738 | elvis@gmail.com | M      |
++------------+---------+-------+----------+----------+-----------+-----------+-----------------+--------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE DISTRICT='GASABO' AND GENDER='M';
++------------+---------+-------+----------+----------+-----------+-----------+-----------------+--------+
+| ID         | FNAME   | LNAME | PROVINCE | DISTRICT | SECTOR    | TELEPHONE | EMAIL           | GENDER |
++------------+---------+-------+----------+----------+-----------+-----------+-----------------+--------+
+| 2147483647 | MUSONI  | gesi  | KIGALI   | GASABO   | KAGUGU    | 787687676 | musonigesi@gmai | M      |
+| 2147483647 | RUKUNDO | ALLY  | KIGALI   | GASABO   | REMERA    | 789484334 | ally@gmail.com  | M      |
+| 2147483647 | GISA    | ELVIS | KIGALI   | GASABO   | KIMIRONKO |  78373738 | elvis@gmail.com | M      |
++------------+---------+-------+----------+----------+-----------+-----------+-----------------+--------+
+3 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
